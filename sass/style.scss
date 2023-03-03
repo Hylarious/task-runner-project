@@ -1,0 +1,156 @@
+// font-family: 'Leckerli One', cursive;
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Noto Serif Display', serif;
+// font-family: 'Roboto Slab', serif;
+// Global
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+// Banner
+.banner {
+    height: 90vh;
+    background: rgba(0, 0, 0, .5) url("https://images.pexels.com/photos/982660/pexels-photo-982660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+}
+
+.card {
+    background-color: rgba($color: #000000, $alpha: 0);
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+// navigation
+.logo {
+    font-family: 'Leckerli One', cursive;
+    font-size: 26px;
+    line-height: 41px;
+    color: #fed136;
+    letter-spacing: 1.3px;
+}
+
+.list-inline-item a {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 41px;
+    text-transform: uppercase;
+    text-decoration: none;
+    ;
+}
+
+.section-title {
+    color: #222222;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 75px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.section-subtitle {
+    color: #777777;
+    font-family: "Droid Serif";
+    font-size: 16px;
+    font-style: italic;
+}
+
+// splash
+.splash {
+    color: #ffffff;
+    border: none;
+    .card-text {
+        font-family: "Droid Serif";
+        font-size: 40px;
+        font-style: italic;
+        letter-spacing: -1px;
+    }
+    .card-title {
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 75px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: -1.88px;
+    }
+    .btn {
+        width: 240px;
+        height: 65px;
+        background-color: #fed136;
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 65px;
+        padding: 0;
+        border: none
+    }
+}
+
+// service
+.service {
+    i {
+        margin: 45px;
+        width: 75px;
+        height: 75px;
+        line-height: 75px;
+        font-size: 37px;
+        color: #fed136;
+        border: 3px solid #fed136;
+        border-radius: 50%;
+    }
+    .card {
+        border: none;
+    }
+}
+
+// portfolio
+.potrfolio {
+    background-color: #f7f7f7;
+    .card {
+        border: none;
+        background-color: var(--bs-card-bg);
+        img {
+            border-radius: 0;
+        }
+    }
+}
+
+// footer
+footer {
+    p {
+        width: 255px;
+        height: 14px;
+        color: #555555;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: -0.35px;
+        margin: auto;
+    }
+    a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-color: #222222;
+        text-align: center;
+        border-radius: 50%;
+        i.icon {
+            font-size: 18px;
+            line-height: 40px;
+            color: #ffffff;
+        }
+    }
+}

@@ -1,0 +1,143 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.banner {
+  height: 90vh;
+  background: rgba(0, 0, 0, 0.5) url("https://images.pexels.com/photos/982660/pexels-photo-982660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-attachment: fixed;
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0);
+}
+.card img {
+  width: 100%;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.logo {
+  font-family: "Leckerli One", cursive;
+  font-size: 26px;
+  line-height: 41px;
+  color: #fed136;
+  letter-spacing: 1.3px;
+}
+
+.list-inline-item a {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 14px;
+  line-height: 41px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.section-title {
+  color: #222222;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 75px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+}
+
+.section-subtitle {
+  color: #777777;
+  font-family: "Droid Serif";
+  font-size: 16px;
+  font-style: italic;
+}
+
+.splash {
+  color: #ffffff;
+  border: none;
+}
+.splash .card-text {
+  font-family: "Droid Serif";
+  font-size: 40px;
+  font-style: italic;
+  letter-spacing: -1px;
+}
+.splash .card-title {
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 75px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -1.88px;
+}
+.splash .btn {
+  width: 240px;
+  height: 65px;
+  background-color: #fed136;
+  color: #ffffff;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 65px;
+  padding: 0;
+  border: none;
+}
+
+.service i {
+  margin: 45px;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  font-size: 37px;
+  color: #fed136;
+  border: 3px solid #fed136;
+  border-radius: 50%;
+}
+.service .card {
+  border: none;
+}
+
+.potrfolio {
+  background-color: #f7f7f7;
+}
+.potrfolio .card {
+  border: none;
+  background-color: var(--bs-card-bg);
+}
+.potrfolio .card img {
+  border-radius: 0;
+}
+
+footer p {
+  width: 255px;
+  height: 14px;
+  color: #555555;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: -0.35px;
+  margin: auto;
+}
+footer a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #222222;
+  text-align: center;
+  border-radius: 50%;
+}
+footer a i.icon {
+  font-size: 18px;
+  line-height: 40px;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFLQTs7O0VBR0ksc0JBQUE7QUNKSjs7QURRQTtFQUNJLFlBQUE7RUFDQSxtSkFBQTtFQUNBLDJCQUFBO0VBQ0Esc0JBQUE7RUFDQSw2QkFBQTtFQUNBLDRCQUFBO0FDTEo7O0FEUUE7RUFDSSxrQ0FBQTtBQ0xKO0FETUk7RUFDSSxXQUFBO0VBQ0EsYUFBQTtFQUNBLG9CQUFBO0tBQUEsaUJBQUE7QUNKUjs7QURTQTtFQUNJLG9DQUFBO0VBQ0EsZUFBQTtFQUNBLGlCQUFBO0VBQ0EsY0FBQTtFQUNBLHFCQUFBO0FDTko7O0FEU0E7RUFDSSxjQUFBO0VBQ0EsdUJBQUE7RUFDQSxlQUFBO0VBQ0EsaUJBQUE7RUFDQSx5QkFBQTtFQUNBLHFCQUFBO0FDTko7O0FEVUE7RUFDSSxjQUFBO0VBQ0EsdUJBQUE7RUFDQSxlQUFBO0VBQ0EsZ0JBQUE7RUFDQSxpQkFBQTtFQUNBLGtCQUFBO0VBQ0EseUJBQUE7RUFDQSxvQkFBQTtBQ1BKOztBRFVBO0VBQ0ksY0FBQTtFQUNBLDBCQUFBO0VBQ0EsZUFBQTtFQUNBLGtCQUFBO0FDUEo7O0FEV0E7RUFDSSxjQUFBO0VBQ0EsWUFBQTtBQ1JKO0FEU0k7RUFDSSwwQkFBQTtFQUNBLGVBQUE7RUFDQSxrQkFBQTtFQUNBLG9CQUFBO0FDUFI7QURTSTtFQUNJLGNBQUE7RUFDQSx1QkFBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtFQUNBLHlCQUFBO0VBQ0EsdUJBQUE7QUNQUjtBRFNJO0VBQ0ksWUFBQTtFQUNBLFlBQUE7RUFDQSx5QkFBQTtFQUNBLGNBQUE7RUFDQSx1QkFBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtFQUNBLGtCQUFBO0VBQ0EseUJBQUE7RUFDQSxpQkFBQTtFQUNBLFVBQUE7RUFDQSxZQUFBO0FDUFI7O0FEYUk7RUFDSSxZQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxpQkFBQTtFQUNBLGVBQUE7RUFDQSxjQUFBO0VBQ0EseUJBQUE7RUFDQSxrQkFBQTtBQ1ZSO0FEWUk7RUFDSSxZQUFBO0FDVlI7O0FEZUE7RUFDSSx5QkFBQTtBQ1pKO0FEYUk7RUFDSSxZQUFBO0VBQ0EsbUNBQUE7QUNYUjtBRFlRO0VBQ0ksZ0JBQUE7QUNWWjs7QURpQkk7RUFDSSxZQUFBO0VBQ0EsWUFBQTtFQUNBLGNBQUE7RUFDQSx1QkFBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtFQUNBLHVCQUFBO0VBQ0EsWUFBQTtBQ2RSO0FEZ0JJO0VBQ0kscUJBQUE7RUFDQSxXQUFBO0VBQ0EsWUFBQTtFQUNBLHlCQUFBO0VBQ0Esa0JBQUE7RUFDQSxrQkFBQTtBQ2RSO0FEZVE7RUFDSSxlQUFBO0VBQ0EsaUJBQUE7RUFDQSxjQUFBO0FDYloiLCJmaWxlIjoic3R5bGUuY3NzIn0= */
