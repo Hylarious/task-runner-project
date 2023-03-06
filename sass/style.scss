@@ -1,50 +1,20 @@
 // font-family: 'Leckerli One', cursive;
-// font-family: 'Montserrat', sans-serif;
 // font-family: 'Noto Serif Display', serif;
-// font-family: 'Roboto Slab', serif;
+$font-title: 'Montserrat',
+sans-serif;
+$font-p: 'Roboto Slab',
+serif;
 // Global
 *,
 *::before,
 *::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-// Banner
-.banner {
-    height: 90vh;
-    background: rgba(0, 0, 0, .5) url("https://images.pexels.com/photos/982660/pexels-photo-982660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    background-position: center;
-    background-size: cover;
-    background-blend-mode: darken;
-    background-attachment: fixed;
-}
-
-.card {
-    background-color: rgba($color: #000000, $alpha: 0);
-    img {
-        width: 100%;
-        height: 300px;
-        object-fit: cover;
-    }
-}
-
-// navigation
-.logo {
-    font-family: 'Leckerli One', cursive;
-    font-size: 26px;
-    line-height: 41px;
-    color: #fed136;
-    letter-spacing: 1.3px;
-}
-
-.list-inline-item a {
-    color: #ffffff;
-    font-family: Montserrat;
-    font-size: 14px;
-    line-height: 41px;
-    text-transform: uppercase;
-    text-decoration: none;
-    ;
+.wrap {
+    padding: 118px 0;
 }
 
 .section-title {
@@ -65,15 +35,85 @@
     font-style: italic;
 }
 
+.card-title {
+    font-family: $font-title;
+}
+
+.card-text {
+    font-family: $font-p;
+}
+
+.card {
+    background-color: rgba($color: #000000, $alpha: 0);
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+// Banner
+.banner {
+    .nav {
+        padding-top: 84px;
+    }
+    width:100vw;
+    height: 90vh;
+    background: rgba(0, 0, 0, .5) url("https://images.pexels.com/photos/982660/pexels-photo-982660.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    position: relative;
+}
+
+// navigation
+.logo {
+    font-family: 'Leckerli One', cursive;
+    font-size: 26px;
+    line-height: 41px;
+    color: #fed136;
+    letter-spacing: 1.3px;
+}
+
+.list-inline {
+    text-align: end;
+    li {
+        display: inline-block;
+        list-style: none;
+    }
+}
+
+.list-item a {
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 42px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
 // splash
 .splash {
     color: #ffffff;
     border: none;
+    text-align: center;
+    position: relative;
+    .card-body {
+        width: 90vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 55%);
+    }
     .card-text {
         font-family: "Droid Serif";
         font-size: 40px;
         font-style: italic;
         letter-spacing: -1px;
+        margin-bottom: 52px;
+        color: #fff;
     }
     .card-title {
         color: #ffffff;
@@ -84,8 +124,7 @@
         letter-spacing: -1.88px;
     }
     .btn {
-        width: 240px;
-        height: 65px;
+        display: inline-block;
         background-color: #fed136;
         color: #ffffff;
         font-family: Montserrat;
@@ -93,55 +132,94 @@
         font-weight: 700;
         text-align: center;
         text-transform: uppercase;
+        text-decoration: none;
         line-height: 65px;
-        padding: 0;
-        border: none
+        padding: 0 52px;
+        border-radius: 3px;
+        border: none;
     }
 }
 
 // service
 .service {
+    text-align: center;
+    .card-body {
+        text-align: center;
+    }
     i {
         margin: 45px;
-        width: 75px;
-        height: 75px;
-        line-height: 75px;
-        font-size: 37px;
+        width: 74px;
+        height: 74px;
+        line-height: 74px;
+        font-size: 38px;
         color: #fed136;
         border: 3px solid #fed136;
         border-radius: 50%;
     }
-    .card {
-        border: none;
+    h4 {
+        color: #222222;
+        font-family: $font-title;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 75px;
+        letter-spacing: -0.45px;
     }
+}
+
+.card-text {
+    color: #777777;
+    font-family: "Roboto Slab";
+    font-size: 14px;
+    letter-spacing: -0.35px;
+}
+
+.card {
+    border: none;
 }
 
 // portfolio
 .potrfolio {
     background-color: #f7f7f7;
+    text-align: center;
     .card {
         border: none;
-        background-color: var(--bs-card-bg);
+        background-color: #fff;
+        padding: 0;
+        margin-bottom: 50px;
         img {
+            width: 98%;
             border-radius: 0;
+            margin: 0;
+        }
+        .card-body {
+            padding: 26px 0;
         }
     }
 }
 
 // footer
 footer {
+    position: relative;
+    .list-inline {
+        text-align: center;
+    }
     p {
-        width: 255px;
         height: 14px;
         color: #555555;
         font-family: Montserrat;
         font-size: 14px;
         font-weight: 400;
         letter-spacing: -0.35px;
-        margin: auto;
     }
+    //  .icons {
+    //      position: absolute;
+    //      top: 50%;
+    //      left: 50%;
+    //      transform: translate(-50%, -50%);
+    //  }
     a {
         display: inline-block;
+        font-size: 0;
         width: 40px;
         height: 40px;
         background-color: #222222;
@@ -151,6 +229,46 @@ footer {
             font-size: 18px;
             line-height: 40px;
             color: #ffffff;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .banner {
+        .nav {
+            margin-bottom: 24px;
+        }
+        .list-inline {
+            text-align: center;
+        }
+    }
+    .splash {
+        .card-body {
+            transform: translate(-50%, 50%);
+        }
+        .card-text {
+            font-size: 35px;
+            margin-bottom: 12px;
+        }
+        .card-title {
+            font-size: 45px;
+        }
+        ul {
+            text-align: center
+        }
+    }
+    .first a {
+        margin-left: 0;
+    }
+    footer {
+        text-align: center;
+    }
+}
+
+@media (max-width: 972px) and (min-width: 768px) {
+    .splash {
+        .card-body {
+            transform: translate(-50%, 25%);
         }
     }
 }
