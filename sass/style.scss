@@ -17,6 +17,12 @@ serif;
     padding: 118px 0;
 }
 
+.service,
+.potrfolio {
+    margin: 0 auto;
+    max-width: 80vw;
+}
+
 .section-title {
     color: #222222;
     font-family: Montserrat;
@@ -143,11 +149,12 @@ serif;
 // service
 .service {
     text-align: center;
+    ;
     .card-body {
         text-align: center;
     }
     i {
-        margin: 45px;
+        margin: 15px;
         width: 74px;
         height: 74px;
         line-height: 74px;
@@ -210,6 +217,7 @@ footer {
         font-size: 14px;
         font-weight: 400;
         letter-spacing: -0.35px;
+        line-height: 40px;
     }
     //  .icons {
     //      position: absolute;
@@ -236,7 +244,7 @@ footer {
 @media (max-width: 768px) {
     .banner {
         .nav {
-            margin-bottom: 24px;
+            padding-top: 24px;
         }
         .list-inline {
             text-align: center;
@@ -244,7 +252,7 @@ footer {
     }
     .splash {
         .card-body {
-            transform: translate(-50%, 50%);
+            transform: translate(-50%, 10%);
         }
         .card-text {
             font-size: 35px;
@@ -268,7 +276,37 @@ footer {
 @media (max-width: 972px) and (min-width: 768px) {
     .splash {
         .card-body {
-            transform: translate(-50%, 25%);
+            transform: translate(-50%, 10%);
         }
+    }
+}
+
+@media (max-width: 565px) {
+    .nav {
+        padding-top: 20px;
+    }
+    .splash {
+        .card-body {
+            transform: translate(-50%, -10%);
+            .card-text {
+                font-size: 25px;
+                margin-bottom: 12px;
+            }
+            .card-title {
+                font-size: 35px;
+            }
+            .btn {
+                margin-top: 10px !important;
+                font-size: 18px;
+                line-height: 30px;
+                padding: 0 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1140px) and (orientation: landscape) {
+    .banner {
+        height: 90vw;
     }
 }
